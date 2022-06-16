@@ -1,0 +1,26 @@
+<form [formGroup]="registerForm" (ngSubmit)="(registerSubmitted)">
+  <label for="FirstName" class="form-label">FirstName</label>
+  <input
+    type="text"
+    class="form-control"
+    id="FirstName"
+    required="required"
+    formControlName="FirstName"
+  />
+  <label for="LastName" class="form-label">LastName</label>
+  <input
+    type="text"
+    class="form-control"
+    id="Lastname"
+    formControlName="LastName"
+  />
+  <label for="number" class="form-label">Phonenumber</label>
+  <input
+    type="number"
+    class="form-control"
+    id="number"
+    required="required"
+    formControlName="number"
+  />
+  <button class="btn btn-primary">Submit</button>
+</form>
